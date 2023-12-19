@@ -1,0 +1,17 @@
+User-agent: Googlebot
+Disallow: /no-indexar/
+
+User-agent: Bingbot
+Disallow: /no-indexar/
+
+User-agent: Yahoo Slurp
+Disallow: /no-indexar/
+
+User-agent: *
+Disallow: /assets/css/
+Disallow: /assets/images/
+Disallow: /assets/fonts/
+Disallow: /assets/fontawesome/
+Disallow: /assets/js/
+
+Sitemap: https://www.molidev.com/sitemap.xml

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>FileService</title>
+        <meta name="author" content="Molidev, Luis">
+        
+        <meta name="description" content="FileService: servicio de ficheros se encarga de enviar al usuario el fichero para que pueda visualizarlo. El servicio debe leer de un directorio en el disco duro, que será pasado al servicio a través de su configuración, los ficheros que serán compartidos.">
+        <meta name="keywords" content="fileservice, python, Microservicio, C#, portfolio, responsive, ZeroC ICE">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <link rel="canonical" href="https://www.molidev.com/fileservice.html">
+
+        <link href="assets/images/icons/favicon_144.png" rel="apple-touch-icon" sizes="144x144">
+        <link href="assets/images/icons/favicon_120.png" rel="apple-touch-icon" sizes="120x120">
+        <link href="assets/images/icons/favicon_76.png" rel="apple-touch-icon" sizes="76x76">
+        <link href="assets/images/icons/favicon.png" rel="shortcut icon">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/iconfont.css">
+
+        <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+
+        <link rel="stylesheet" href="assets/css/plugins.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/color-1.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5L9XXWZS5N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5L9XXWZS5N');
+        </script>
+    </head>
+    <body>
+        <div id="dtr-wrapper" class="clearfix"> 
+            <header id="dtr-header-global" class="fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-dark dtr-menu">
+                    <div class="container"> 
+                        
+                        <a class="navbar-brand logo-light" href="index.html"><img src="assets/images/logo-white.webp" alt="logo"></a> 
+                        <a class="navbar-brand logo-dark" href="index.html"><img src="assets/images/logo.webp" alt="logo"></a> 
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="dtr-scrollspy dtr-nav navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="homeLink">Inicio</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="aboutLink">Sobre mí</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="timelineLink">Formación</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="servicesLink">Habilidades</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="worksLink">Portfolio</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="contactLink">Contacto</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div id="dtr-main-content">            
+                <div class=" dtr-page-title">
+                    <h3 class="dtr-page-heading">FileService</h3>
+                </div>
+                
+                <div class="container"> 
+                    
+                    <div class="page-content-wrapper dtr-page-content"> <img src="assets/images/portfolio/fileservice/fileservice_logo_1.webp" alt="image" class="dtr-portfolio-entry-image dtr-rounded">
+                        <div class="row dtr-row-my">
+                            <div class="col-12 col-md-7">
+                                <h3>Descripción del proyecto</h3>
+                                <p id="descripcion_proyecto">
+                                    El <b>servicio de ficheros</b> desempeña un papel crucial en la <b>visualización de archivos</b> por parte del usuario, leyendo desde un directorio específico en el disco duro, configurado previamente, para <b>compartir los archivos</b><br>
+                                    Dentro de este sistema, el <b>FileService</b> incorpora funciones esenciales como OpenFile, UploadFile y RemoveFile para interactuar con los archivos. El <b>FileHandler</b> juega un papel importante con sus dos funciones primarias, receive y close, que trabajan en conjunto con el <b>proxy</b>. <br>
+                                    Por otro lado, el <b>FileUploader</b> entra en acción para permitir la subida de archivos en la plataforma. Además, el sistema incluye <b>Announcements</b>, que permite a los servicios enviar y recibir anuncios. Esta funcionalidad es clave para que los servicios determinen la <b>legitimidad</b> y correcta promoción de otros <b>servicios</b>.
+                                </p>
+                                
+                            </div>
+                            
+                            <div class="col-12 col-md-5 dtr-mt-md-30px"> 
+                                <table class="dtr-table">
+                                    <tr>
+                                        <th>Link del proyecto</th>
+                                        <td><span class="highlight-accent"><a class="link" href="https://github.com/molinem/ICEFLIX-FILESERVICE" target="_blank"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;FileService</a></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lenguaje</th>
+                                        <td><span class="highlight-accent"><b>Python</b></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Middleware</th>
+                                        <td><span class="highlight-accent"><a class="link" href="https://zeroc.com/ice" target="_blank">ZeroC ICE</a></span></td>
+                                    </tr>
+                                </table>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="footer" class="dtr-footer-section bg-dark color-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12"> 
+                                <p class="text-center">
+                                    <img src="assets/images/icons/favicon_30.png" alt="">
+                                    Molidev © 2023 Todos los derechos reservados. </p>
+                                <a id="take-to-top" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div> 
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/plugins.js"></script> 
+        <script src="assets/js/custom.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="assets/js/portfolio.js"></script>
+    </body>
+</html>

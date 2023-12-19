@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Generador laberintos</title>
+        <meta name="author" content="Molidev, Luis">
+        
+        <meta name="description" content="Generador de laberintos es un software capaz de generar laberintos indicando un tamaño mediante la interfaz gráfica. Además, permite resolver mediante algoritmos el propio laberinto generado.">
+        <meta name="keywords" content="laberintos, portfolio, generador, algoritmos, interfaz, algoritmo de ordenación, software">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <link rel="canonical" href="https://www.molidev.com/generador_laberintos.html">
+
+        <link href="assets/images/icons/favicon_144.png" rel="apple-touch-icon" sizes="144x144">
+        <link href="assets/images/icons/favicon_120.png" rel="apple-touch-icon" sizes="120x120">
+        <link href="assets/images/icons/favicon_76.png" rel="apple-touch-icon" sizes="76x76">
+        <link href="assets/images/icons/favicon.png" rel="shortcut icon">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/iconfont.css">
+
+        <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+
+        <link rel="stylesheet" href="assets/css/plugins.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/color-1.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5L9XXWZS5N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5L9XXWZS5N');
+        </script>
+    </head>
+    <body>
+        <div id="dtr-wrapper" class="clearfix"> 
+            <header id="dtr-header-global" class="fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-dark dtr-menu">
+                    <div class="container"> 
+                        
+                        <a class="navbar-brand logo-light" href="index.html"><img src="assets/images/logo-white.webp" alt="logo"></a> 
+                        <a class="navbar-brand logo-dark" href="index.html"><img src="assets/images/logo.webp" alt="logo"></a> 
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="dtr-scrollspy dtr-nav navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="homeLink">Inicio</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="aboutLink">Sobre mí</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="timelineLink">Formación</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="servicesLink">Habilidades</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="worksLink">Portfolio</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="javascript:void(0);" id="contactLink">Contacto</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div id="dtr-main-content">            
+                <div class=" dtr-page-title">
+                    <h3 class="dtr-page-heading">Generador de laberintos</h3>
+                </div>
+                
+                <div class="container"> 
+                    
+                    <div class="page-content-wrapper dtr-page-content"> <img src="assets/images/portfolio/generador_laberinto/generador_laberinto.webp" alt="image" class="dtr-portfolio-entry-image dtr-rounded">
+                        <div class="row dtr-row-my"> 
+                            <div class="col-12 col-md-7">
+                                <h3>Descripción del proyecto</h3>
+                                <p id="descripcion_proyecto">El software fue desarrollado como trabajo del <b>laboratorio</b> para la asignatura
+                                     de <b>Sistemas Inteligentes</b>, permite generar un <b>laberinto</b> dado un tamaño. Además, proporciona la opción de <b>guardar y cargar</b> un laberinto en formato <b>imagen/JSON</b>.
+                                     Posee una interfaz inituitiva con la cual se permite al usuario introducir las <b>filas y columnas</b>, una vez introducidas procederemos a aplicar los distintos <b>algoritmos de búsqueda</b>
+                                     (BREADTH, DEPTH, UNIFORM, GREEDY, A) para la resolución del mismo. <br>
+                                     A continuación, se muestran dos ejemplos de <b>laberintos generados</b> mediante el software :
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-5 dtr-mt-md-30px"> 
+                                <table class="dtr-table">
+                                    <tr>
+                                        <th>Link del proyecto</th>
+                                        <td><span class="highlight-accent"><a class="link" href="https://github.com/molinem/SI_LAB_C1_9" target="_blank" ><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp; Generador laberintos</a></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lenguaje</th>
+                                        <td><span class="highlight-accent"><b>Java</b></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Componentes</th>
+                                        <td><span class="highlight-accent"><b>JSON</b></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row dtr-row-my"> 
+                            
+                            <div class="col-12 col-md-6">
+                                <img src="assets/images/portfolio/generador_laberinto/laberinto_40.webp" alt="image" class="dtr-mb-5 dtr-rounded">
+                            </div>
+
+                            <div class="col-12 col-md-6 dtr-mt-md-30px">
+                                <img src="assets/images/portfolio/generador_laberinto/laberinto_100.webp" alt="image" class="dtr-mb-5 dtr-rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="footer" class="dtr-footer-section bg-dark color-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12"> 
+                                <p class="text-center">
+                                    <img src="assets/images/icons/favicon_30.png" alt="">
+                                    Molidev © 2023 Todos los derechos reservados. </p>
+                                <a id="take-to-top" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div> 
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/plugins.js"></script> 
+        <script src="assets/js/custom.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="assets/js/portfolio.js"></script>
+    </body>
+</html>
